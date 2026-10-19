@@ -1,5 +1,8 @@
 <p align="center">
-  <a href="https://agentwebmap.com"><img src="https://agentwebmap.com/logo.svg" alt="Agent Web Map" width="420"></a>
+  <a href="https://agentwebmap.com"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://agentwebmap.com/logo-dark.svg">
+    <img src="https://agentwebmap.com/logo.svg" alt="Agent Web Map" width="420">
+  </picture></a>
 </p>
 
 <p align="center"><strong>The map of the agent-readable web.</strong><br>
