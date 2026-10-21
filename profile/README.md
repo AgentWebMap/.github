@@ -1,76 +1,47 @@
-<p align="center">
-  <a href="https://agentwebmap.com"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://agentwebmap.com/logo-dark.svg">
-    <img src="https://agentwebmap.com/logo.svg" alt="Agent Web Map" width="420">
-  </picture></a>
-</p>
+<p align="center"><a href="https://agentwebmap.com/"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://agentwebmap.com/logo-dark.svg">
+  <img src="https://agentwebmap.com/logo.svg" alt="Agent Web Map" width="420">
+</picture></a></p>
 
-<p align="center"><strong>Find publisher documentation for your agent's next task.</strong><br>
-AgentWebMap indexes websites publishing <a href="https://llmstxt.org/">llms.txt</a> and helps AI agents find relevant documentation through a free API and MCP server, with original source links, matching evidence and freshness information.</p>
+# Discover the web through llms.txt
 
-<p align="center">
-  <a href="https://agentwebmap.com/discover">Try discovery</a> ·
-  <a href="https://agentwebmap.com/coverage">Coverage</a> ·
-  <a href="https://agentwebmap.com/contact">Contact us</a> ·
-  <a href="https://agentwebmap.com/benchmarks">Benchmarks</a> ·
-  <a href="https://x.com/AgentWebMap">X</a> ·
-  <a href="https://agentwebmap.com/docs">API docs</a> ·
-  <a href="https://agentwebmap.com/docs#mcp">MCP server</a> ·
-  <a href="https://agentwebmap.com/llms.txt">llms.txt</a> ·
-  <a href="https://agentwebmap.com/check">Check your llms.txt</a> ·
-  <a href="https://agentwebmap.com/generate">Generate one</a>
-</p>
+[Agent Web Map](https://agentwebmap.com/) discovers and continuously validates websites publishing llms.txt. People can browse publishers and explore their shared headings; AI agents can find original source links through the free JSON API and hosted MCP server.
 
-## Use it for a task
+**[Browse and search](https://agentwebmap.com/browse) · [Explore sections](https://agentwebmap.com/explore) · [Statistics](https://agentwebmap.com/stats) · [API & MCP](https://agentwebmap.com/docs)**
 
-One call finds documentation links for a domain or development task, with publisher-provided matching evidence, freshness, owner terms and alternatives:
+## For people
 
-```
-GET https://agentwebmap.com/v1/resolve?q=modelcontextprotocol.io
-GET https://agentwebmap.com/v1/resolve?q=modelcontextprotocol+authorization&limit=3&max_age=86400
-```
+- Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
+- Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
+- See current counts, growth and file statistics in [Statistics](https://agentwebmap.com/stats), or explore the [world map](https://agentwebmap.com/map).
+- [Check your llms.txt](https://agentwebmap.com/check), [generate a draft](https://agentwebmap.com/generate), or [submit a site](https://agentwebmap.com/submit).
 
-`GET https://agentwebmap.com/v1` lists everything else. Reads need no key. Any domain page answers in JSON or Markdown through the `Accept` header, and `POST /v1/watch` tells you, signed, when a site's llms.txt changes or breaks.
+## For agents and integrations
 
-Add the MCP server to Codex:
+Connect an HTTP MCP client to **`https://agentwebmap.com/mcp`**, or start with [the REST API](https://agentwebmap.com/v1). Public discovery needs no account or API key.
 
-```bash
-codex mcp add agentwebmap --url https://agentwebmap.com/mcp
-```
+The 19 hosted MCP tools cover task resolution, publisher search and lookup, cached-file reads, categories, section connections, validation, generation and optional owner management. Keyword and meaning-based search rank task relevance first. The client chooses when to call the available tools.
 
-Or to Claude Code:
+**[Client setup and tool list](https://github.com/AgentWebMap/mcp#add-it) · [API documentation](https://agentwebmap.com/docs) · [Markdown docs](https://agentwebmap.com/docs.md) · [OpenAPI](https://agentwebmap.com/openapi.json)**
 
-```bash
-claude mcp add --transport http agentwebmap https://agentwebmap.com/mcp
-```
+Try a task lookup: [Model Context Protocol authorization](https://agentwebmap.com/v1/resolve?q=modelcontextprotocol%20authorization). For headings, start with [`/v1/sections`](https://agentwebmap.com/v1/sections), then explore connections with [`/v1/section-graph`](https://agentwebmap.com/v1/section-graph).
 
-Cursor and VS Code also use the same HTTP endpoint. Their configuration keys differ: Cursor uses `mcpServers` in `.cursor/mcp.json`; VS Code uses `servers` in `.vscode/mcp.json`. See [client-specific setup](https://github.com/AgentWebMap/mcp#add-it) for exact configurations, including user and project paths for all four clients.
+Public discovery is monitored without automatic daily usage or pagination quotas. [Access details](https://agentwebmap.com/docs#limits).
 
-For dependency-aware discovery, run the [Node.js CLI](https://github.com/AgentWebMap/mcp/blob/main/docs/discovery-cli.md) from a repository checkout:
+## For website owners
 
-```bash
-node examples/discover.mjs --project /path/to/project --dry-run
-node examples/discover.mjs --project /path/to/project
-```
+[Verify and manage your listing](https://agentwebmap.com/manage) to control its profile and terms for agents, recheck file health, and return to a private dashboard with daily discovery activity and score history. Verified listings receive an ownership signal and an embeddable badge. No backlink is required.
 
-The preview shows recognized dependency-to-publisher mappings without network calls or writes. The normal run makes a small, bounded set of index requests and prints JSON with source evidence and freshness. No package install, project execution, or automatic instruction-file edits are needed.
+Sites can be discovered automatically; verification is optional for inclusion. It confirms domain control rather than content accuracy. [Ownership guide](https://github.com/AgentWebMap/mcp/blob/main/docs/ownership.md).
 
-Coverage is incomplete. Read the original documentation before relying on it: the index searches published llms.txt link descriptions and headings, not the full text of every linked page. Missing, weak or stale results need the publisher's own search or web search. The optional [discovery skill](https://github.com/AgentWebMap/mcp/tree/main/skills/agentwebmap-docs), [task examples](https://github.com/AgentWebMap/mcp/blob/main/docs/task-examples.md) and [benchmark runner](https://github.com/AgentWebMap/mcp/tree/main/benchmarks) make the workflow reusable and measurable. Connecting MCP makes tools available; the agent client chooses when to use them.
+## Learn about llms.txt
 
-Use `GET /v1/categories` or the `list_categories` MCP tool to discover category filters for providers. Labels are inferred by versioned rules from publisher metadata, with evidence in full domain responses; uncategorized means the evidence was insufficient. Separately, `capability=mcp` finds explicit publisher-declared endpoint links; availability and tools remain unverified. [Category reference](https://github.com/AgentWebMap/mcp/blob/main/docs/categories.md).
+[What is llms.txt?](https://agentwebmap.com/what-is-llms-txt) · [Real examples](https://agentwebmap.com/llms-txt-examples) · [Best practices](https://agentwebmap.com/llms-txt-best-practices) · [About the directory](https://agentwebmap.com/about)
 
-## For site owners
+Coverage is incomplete. Read the original publisher pages before relying on an answer. Indexed headings and declared endpoints are discovery signals, not proof of an available action. Usage totals can include bots and repeated requests.
 
-Sites are discovered from public llms.txt files and can be used by agents immediately. Inclusion does not imply endorsement, partnership or publisher participation. Owners can optionally [manage their listing in the browser](https://agentwebmap.com/manage) to edit information, publish terms for agents, configure breakage alerts and see measured discovery requests and publisher clicks. No terminal or backlink is required.
+[The public repository](https://github.com/AgentWebMap/mcp) contains the platform introduction and integration documentation. The hosted application is maintained separately.
 
-The [ownership guide](https://github.com/AgentWebMap/mcp/blob/main/docs/ownership.md) covers secure browser, API and MCP management, fresh ownership challenges and key recovery.
+[Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt)
 
-Task searches rank relevance first; ownership confirmation proves domain control rather than content accuracy. Usage counts can include bots, tests and repeated calls; they do not measure unique agents or confirmed reads. Not sure your file is right? [Check it](https://agentwebmap.com/check). Don't have one? [Generate a draft](https://agentwebmap.com/generate).
-
-## Repositories
-
-- [mcp](https://github.com/AgentWebMap/mcp): MCP client setup, free API reference, runnable examples, dependency-aware CLI and optional discovery skill.
-
-Want to evaluate or describe the project? Start with the [coverage report](https://agentwebmap.com/coverage), then use the [listing copy and adoption checklist](https://github.com/AgentWebMap/mcp/blob/main/docs/distribution.md). Directory size, curated benchmark results, observed requests and independent agent adoption measure different things.
-
-Contact: admin@agentwebmap.com
+Updated 21 October 2026.
