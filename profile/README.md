@@ -11,6 +11,10 @@
 
 ## For people
 
+Use the clean text-file interface in light or dark mode. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private; the directory and agent tools stay open without an account.
+
+- Start with [curated source collections](https://agentwebmap.com/collections), or [make your own](https://agentwebmap.com/workspace/collections).
+
 - Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
 - Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
 - See current counts, growth and file statistics in [Statistics](https://agentwebmap.com/stats), or explore the [world map](https://agentwebmap.com/map).
