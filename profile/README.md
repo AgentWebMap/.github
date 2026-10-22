@@ -30,7 +30,7 @@ Public discovery is monitored without automatic daily usage or pagination quotas
 
 ## For website owners
 
-[Verify and manage your listing](https://agentwebmap.com/manage) to control its profile and terms for agents, recheck file health, and return to a private dashboard with daily discovery activity and score history. Verified listings receive an ownership signal and an embeddable badge. No backlink is required.
+[Verify and manage your listing](https://agentwebmap.com/manage) to control its profile and terms for agents, recheck file health, and return to a private dashboard with daily discovery activity and score history. Valid, listed, unblocked, verified profiles are eligible for search-engine visibility. Verified listings receive an ownership signal and an embeddable badge. No backlink is required.
 
 Sites can be discovered automatically; verification is optional for inclusion. It confirms domain control rather than content accuracy. [Ownership guide](https://github.com/AgentWebMap/mcp/blob/main/docs/ownership.md).
 
