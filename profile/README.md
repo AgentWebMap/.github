@@ -45,6 +45,8 @@ Sites can be discovered automatically; verification is optional for inclusion. I
 
 ## Learn about llms.txt
 
+[The llms.txt project](https://agentwebmap.com/llms-txt-project) credits the original [proposal at llmstxt.org](https://llmstxt.org/) by Jeremy Howard and explains how Agent Web Map builds on that convention.
+
 [What is llms.txt?](https://agentwebmap.com/what-is-llms-txt) · [Real examples](https://agentwebmap.com/llms-txt-examples) · [Best practices](https://agentwebmap.com/llms-txt-best-practices) · [About the directory](https://agentwebmap.com/about)
 
 Coverage is incomplete. Read the original publisher pages before relying on an answer. Indexed headings and declared endpoints are discovery signals, not proof of an available action. Usage totals can include bots and repeated requests.
