@@ -1,6 +1,6 @@
 <p align="center"><a href="https://agentwebmap.com/"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://agentwebmap.com/logo-dark.svg">
-  <img src="https://agentwebmap.com/logo.svg" alt="Agent Web Map" width="420">
+  <source media="(prefers-color-scheme: dark)" srcset="https://agentwebmap.com/logo-dark.svg?v=awm-20261022">
+  <img src="https://agentwebmap.com/logo.svg?v=awm-20261022" alt="Agent Web Map" width="420">
 </picture></a></p>
 
 # Discover the web through llms.txt
@@ -11,7 +11,7 @@
 
 ## For people
 
-Use the clean text-file interface in light or dark mode. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private; the directory and agent tools stay open without an account.
+Use the clean text-file interface in light or dark mode, with sans-serif text and monospace headings and code. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private; the directory and agent tools stay open without an account.
 
 - Start with [curated source collections](https://agentwebmap.com/collections), or [make your own](https://agentwebmap.com/workspace/collections).
 
