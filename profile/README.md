@@ -51,6 +51,6 @@ Coverage is incomplete. Read the original publisher pages before relying on an a
 
 [The public repository](https://github.com/AgentWebMap/mcp) contains the platform introduction and integration documentation. The hosted application is maintained separately.
 
-[Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt)
+[Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt) · [Full platform reference and verified publishers](https://agentwebmap.com/llms-full.txt)
 
 Updated 22 October 2026.
