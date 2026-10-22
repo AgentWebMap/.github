@@ -3,9 +3,11 @@
   <img src="https://agentwebmap.com/logo.svg?v=awm-20261022" alt="Agent Web Map" width="420">
 </picture></a></p>
 
-# Discover the web through llms.txt
+# Find the next useful source for your agent
 
 [Agent Web Map](https://agentwebmap.com/) discovers and continuously validates websites publishing llms.txt. People can browse publishers and explore their shared headings; AI agents can find original source links through the free JSON API and hosted MCP server.
+
+[Try a real task lookup](https://agentwebmap.com/#task-discovery): enter a publisher and task, inspect matching evidence and check dates, then read the original pages. [Connect your agent](https://agentwebmap.com/docs#start) for repeated use through HTTP or MCP. Connections expose tools; the client decides when to use them.
 
 **[Browse and search](https://agentwebmap.com/browse) · [Explore sections](https://agentwebmap.com/explore) · [Statistics](https://agentwebmap.com/stats) · [API & MCP](https://agentwebmap.com/docs)**
 
@@ -17,6 +19,7 @@ Use the clean text-file interface in light or dark mode, with sans-serif text an
 
 - Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
 - Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
+- The point cloud measures shared publisher headings. Meaning-based search and inferred topic categories provide separate discovery signals.
 - See current counts, growth and file statistics in [Statistics](https://agentwebmap.com/stats), or explore the [world map](https://agentwebmap.com/map).
 - [Check your llms.txt](https://agentwebmap.com/check), [generate a draft](https://agentwebmap.com/generate), or [submit a site](https://agentwebmap.com/submit).
 
@@ -48,4 +51,4 @@ Coverage is incomplete. Read the original publisher pages before relying on an a
 
 [Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt)
 
-Updated 21 October 2026.
+Updated 22 October 2026.
