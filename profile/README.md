@@ -27,7 +27,9 @@ Use the clean text-file interface in light or dark mode, with sans-serif text an
 
 Connect an HTTP MCP client to **`https://agentwebmap.com/mcp`**, or start with [the REST API](https://agentwebmap.com/v1). Public discovery needs no account or API key.
 
-The 19 hosted MCP tools cover task resolution, publisher search and lookup, cached-file reads, categories, section connections, validation, generation and optional owner management. Keyword and meaning-based search rank task relevance first. The client chooses when to call the available tools.
+The 20 hosted MCP tools cover task resolution, publisher search and lookup, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Keyword and meaning-based search rank task relevance first. The client chooses when to call the available tools.
+
+[Country filtering](https://agentwebmap.com/docs#countries) works in Browse, the section cloud, REST and MCP: use `country=FR` or `country=unknown`, and discover available codes with [`GET /v1/countries`](https://agentwebmap.com/v1/countries) or `list_countries`. Location is inferred from domains or hosting, not verified business headquarters or markets served.
 
 **[Client setup and tool list](https://github.com/AgentWebMap/mcp#add-it) · [API documentation](https://agentwebmap.com/docs) · [Markdown docs](https://agentwebmap.com/docs.md) · [OpenAPI](https://agentwebmap.com/openapi.json)**
 
