@@ -3,9 +3,9 @@
   <img src="https://agentwebmap.com/logo.svg?v=awm-20261022" alt="Agent Web Map" width="420">
 </picture></a></p>
 
-# Find the next useful source for your agent
+# A clearer way into the agent-readable web
 
-[Agent Web Map](https://agentwebmap.com/) discovers and continuously validates websites publishing llms.txt. People can browse publishers and explore their shared headings; AI agents can find original source links through the free JSON API and hosted MCP server.
+[Agent Web Map](https://agentwebmap.com/) is an llms.txt directory for AI agents and people. Find publisher documentation for a task, explore connections between websites, and save useful sources. Agents can use the same index through the free JSON API and hosted MCP server.
 
 [Try a real task lookup](https://agentwebmap.com/#task-discovery): enter a publisher and task, inspect matching evidence and check dates, then read the original pages. [Connect your agent](https://agentwebmap.com/docs#start) for repeated use through HTTP or MCP. Connections expose tools; the client decides when to use them.
 
@@ -16,10 +16,9 @@
 Use the clean text-file interface in light or dark mode, with sans-serif text and monospace headings and code. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private; the directory and agent tools stay open without an account.
 
 - Start with [curated source collections](https://agentwebmap.com/collections), or [make your own](https://agentwebmap.com/workspace/collections).
-
 - Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
 - Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
-- The point cloud measures shared publisher headings. Meaning-based search and inferred topic categories provide separate discovery signals.
+- Follow shared headings and related meanings in the point cloud, or start with a publisher to discover [similar sites](https://agentwebmap.com/explore?publisher=cloudflare.com). Topic details, websites, color layers and filters open when selected.
 - See current counts, growth and file statistics in [Statistics](https://agentwebmap.com/stats), or explore the [world map](https://agentwebmap.com/map).
 - [Check your llms.txt](https://agentwebmap.com/check), [generate a draft](https://agentwebmap.com/generate), or [submit a site](https://agentwebmap.com/submit).
 
@@ -27,15 +26,15 @@ Use the clean text-file interface in light or dark mode, with sans-serif text an
 
 Connect an HTTP MCP client to **`https://agentwebmap.com/mcp`**, or start with [the REST API](https://agentwebmap.com/v1). Public discovery needs no account or API key.
 
-The 20 hosted MCP tools cover task resolution, publisher search and lookup, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Keyword and meaning-based search rank task relevance first. The client chooses when to call the available tools.
+The 21 hosted MCP tools cover task resolution, publisher search and lookup, similar sites, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Task relevance comes first. The client chooses when to call the available tools.
 
-[Country filtering](https://agentwebmap.com/docs#countries) works in Browse, the section cloud, REST and MCP: use `country=FR` or `country=unknown`, and discover available codes with [`GET /v1/countries`](https://agentwebmap.com/v1/countries) or `list_countries`. Location is inferred from domains or hosting, not verified business headquarters or markets served.
+[Country and action filters](https://agentwebmap.com/docs#countries) work across the website and programmatic discovery. Use `country=FR` or `country=unknown`, and discover available codes with [`GET /v1/countries`](https://agentwebmap.com/v1/countries) or `list_countries`. Country evidence can include published organization addresses, owner declarations, domain suffixes or hosting; it does not establish verified headquarters or markets served.
 
 **[Client setup and tool list](https://github.com/AgentWebMap/mcp#add-it) · [API documentation](https://agentwebmap.com/docs) · [Markdown docs](https://agentwebmap.com/docs.md) · [OpenAPI](https://agentwebmap.com/openapi.json)**
 
 Try a task lookup: [Model Context Protocol authorization](https://agentwebmap.com/v1/resolve?q=modelcontextprotocol%20authorization). For headings, start with [`/v1/sections`](https://agentwebmap.com/v1/sections), then explore connections with [`/v1/section-graph`](https://agentwebmap.com/v1/section-graph).
 
-Public discovery is monitored without automatic daily usage or pagination quotas. [Access details](https://agentwebmap.com/docs#limits).
+Public discovery needs no account or API key. [Access details](https://agentwebmap.com/docs#limits).
 
 ## For website owners
 
@@ -55,4 +54,4 @@ Coverage is incomplete. Read the original publisher pages before relying on an a
 
 [Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt) · [Full platform reference and verified publishers](https://agentwebmap.com/llms-full.txt)
 
-Updated 22 October 2026.
+Public feature and interface information reviewed 24 October 2026.
