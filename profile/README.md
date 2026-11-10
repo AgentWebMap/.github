@@ -13,7 +13,7 @@
 
 ## For people
 
-Browse the full-width directory or explore indexed headings in the interactive 3D point cloud, with light and dark themes. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private. Basic discovery stays anonymous; generation, website audits and MCP endpoint checks require free registration.
+Browse the full-width directory or explore indexed headings in the interactive 3D point cloud, with light and dark themes. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private. Basic discovery stays anonymous; live website checks, generation, website audits and MCP endpoint checks require free registration.
 
 - Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
 - Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
@@ -25,7 +25,7 @@ Browse the full-width directory or explore indexed headings in the interactive 3
 
 Connect an HTTP MCP client to **`https://agentwebmap.com/mcp`**, or start with [the REST API](https://agentwebmap.com/v1). Public discovery needs no account or API key.
 
-The 24 hosted MCP tools cover task resolution, publisher search and lookup, similar sites, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Task relevance comes first. The client chooses when to call the available tools.
+The 25 hosted MCP tools cover task resolution, publisher search and lookup, a small keyword preview, similar sites, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Task relevance comes first. The client chooses when to call the available tools.
 
 [Country and action filters](https://agentwebmap.com/docs#countries) work across the website and programmatic discovery. Use `country=FR` or `country=unknown`, and discover available codes with [`GET /v1/countries`](https://agentwebmap.com/v1/countries) or `list_countries`. Country evidence can include published organization addresses, owner declarations, domain suffixes or hosting; it does not establish verified headquarters or markets served.
 
@@ -33,7 +33,7 @@ The 24 hosted MCP tools cover task resolution, publisher search and lookup, simi
 
 Try a task lookup: [Model Context Protocol authorization](https://agentwebmap.com/v1/resolve?q=modelcontextprotocol%20authorization). For headings, start with [`/v1/sections`](https://agentwebmap.com/v1/sections), then explore connections with [`/v1/section-graph`](https://agentwebmap.com/v1/section-graph).
 
-Public discovery needs no account or API key. [Access details](https://agentwebmap.com/docs#limits).
+Public discovery needs no account or API key and reads stored data only. It never fetches publisher websites or invokes paid AI. Registered live tools also prohibit paid-provider calls. [Access details](https://agentwebmap.com/docs#limits).
 
 For protected tools, create a free account and an integration key, or connect a client using OAuth with PKCE. An integration key identifies usage; an owner key separately proves control of one publisher. [Access and authentication](https://agentwebmap.com/docs#limits).
 
@@ -55,4 +55,4 @@ Coverage is incomplete. Read the original publisher pages before relying on an a
 
 [Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt) · [Full platform reference and verified publishers](https://agentwebmap.com/llms-full.txt)
 
-Public feature and interface information reviewed 5 November 2026.
+Public feature and interface information reviewed 10 November 2026.
