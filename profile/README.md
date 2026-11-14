@@ -3,56 +3,39 @@
   <img src="https://agentwebmap.com/logo.svg?v=awm-20261022" alt="Agent Web Map" width="420">
 </picture></a></p>
 
-# Agent Web Map: llms.txt directory, API and MCP server
+# Agent Web Map — llms.txt directory for AI agents
 
-[Agent Web Map](https://agentwebmap.com/) is an llms.txt directory for AI agents and people. Find publisher documentation for a task, explore connections between websites, and save useful sources. Agents can use the same index through the free JSON API and hosted MCP server.
+[Agent Web Map](https://agentwebmap.com/) helps agents find publisher documentation and llms.txt files through a **free API and hosted MCP server**. People can browse the same index and explore connections in the original interactive **3D point cloud**.
 
-[Try a real task lookup](https://agentwebmap.com/#task-discovery): enter a publisher and task, inspect matching evidence and check dates, then read the original pages. [Connect your agent](https://agentwebmap.com/docs#start) for repeated use through HTTP or MCP. Connections expose tools; the client decides when to use them.
-
-**[Browse and search](https://agentwebmap.com/browse) · [Explore sections](https://agentwebmap.com/explore) · [Statistics](https://agentwebmap.com/stats) · [API & MCP](https://agentwebmap.com/docs)**
-
-## For people
-
-Browse the full-width directory or explore indexed headings in the interactive 3D point cloud, with light and dark themes. [Sign in with an email code](https://agentwebmap.com/workspace/signin) to save favorite sources, organize private collections and revisit recently opened references. Your workspace is private. Basic discovery stays anonymous; live website checks, generation, website audits and MCP endpoint checks require free registration.
-
-- Find a publisher or documentation for a task in [Browse](https://agentwebmap.com/browse).
-- Explore connections between headings across files in the growing [section cloud](https://agentwebmap.com/explore).
-- Follow shared headings and related meanings in the point cloud, or start with a publisher to discover [similar sites](https://agentwebmap.com/explore?publisher=cloudflare.com). Topic details, websites, color layers and filters open when selected.
-- See current counts, growth and file statistics in [Statistics](https://agentwebmap.com/stats), or explore the [world map](https://agentwebmap.com/map).
-- [Check your llms.txt](https://agentwebmap.com/check), [generate a draft](https://agentwebmap.com/generate), or [submit a site](https://agentwebmap.com/submit).
+**[Browse the directory](https://agentwebmap.com/browse) · [Explore the index](https://agentwebmap.com/explore) · [API & MCP](https://agentwebmap.com/docs) · [Manage your website](https://agentwebmap.com/manage)**
 
 ## For agents and integrations
 
-Connect an HTTP MCP client to **`https://agentwebmap.com/mcp`**, or start with [the REST API](https://agentwebmap.com/v1). Public discovery needs no account or API key.
+- Find documentation for a task, with source links, matching evidence and recorded check dates.
+- Search publishers, read cached llms.txt files and discover related sources.
+- Filter by category, country, site type, declared MCP capability or indexed headings.
+- Start anonymously; create a named integration for a larger free allowance and scoped credentials, or connect through MCP OAuth.
 
-The 25 hosted MCP tools cover task resolution, publisher search and lookup, a small keyword preview, similar sites, cached-file reads, categories, countries, section connections, validation, generation and optional owner management. Task relevance comes first. The client chooses when to call the available tools.
+**MCP endpoint:** `https://agentwebmap.com/mcp` — remote Streamable HTTP.
 
-[Country and action filters](https://agentwebmap.com/docs#countries) work across the website and programmatic discovery. Use `country=FR` or `country=unknown`, and discover available codes with [`GET /v1/countries`](https://agentwebmap.com/v1/countries) or `list_countries`. Country evidence can include published organization addresses, owner declarations, domain suffixes or hosting; it does not establish verified headquarters or markets served.
+**[Connect your agent](https://agentwebmap.com/docs#start) · [API reference](https://agentwebmap.com/docs) · [OpenAPI](https://agentwebmap.com/openapi.json)**
 
-**[Client setup and tool list](https://github.com/AgentWebMap/mcp#add-it) · [API documentation](https://agentwebmap.com/docs) · [Markdown docs](https://agentwebmap.com/docs.md) · [OpenAPI](https://agentwebmap.com/openapi.json)**
+Discovery reads stored data. A public search or lookup does not fetch publisher websites, run paid AI or trigger a recrawl. Free registered access unlocks separate live checking, generation, website audits and MCP endpoint inspection.
 
-Try a task lookup: [Model Context Protocol authorization](https://agentwebmap.com/v1/resolve?q=modelcontextprotocol%20authorization). For headings, start with [`/v1/sections`](https://agentwebmap.com/v1/sections), then explore connections with [`/v1/section-graph`](https://agentwebmap.com/v1/section-graph).
-
-Public discovery needs no account or API key and reads stored data only. It never fetches publisher websites or invokes paid AI. Registered live tools also prohibit paid-provider calls. [Access details](https://agentwebmap.com/docs#limits).
-
-For protected tools, create a free account and an integration key, or connect a client using OAuth with PKCE. An integration key identifies usage; an owner key separately proves control of one publisher. [Access and authentication](https://agentwebmap.com/docs#limits).
+Anonymous discovery includes **100 distinct publishers per network per UTC day**. A confirmed account with an application name and purpose includes **5,000/day**, shared across sessions, keys and OAuth connections. Larger bulk access needs approval. Individual public publisher profiles remain available.
 
 ## For website owners
 
-[Verify your website—free](https://agentwebmap.com/verify?from=github) to control its profile and terms for agents, recheck file health, and return to a private dashboard with daily discovery activity and score history. [Preview the dashboard](https://agentwebmap.com/manage/preview). Valid, listed, unblocked, verified profiles are eligible for search-engine visibility. Eligible verified publishers are named in [our llms-full.txt](https://agentwebmap.com/llms-full.txt); default Browse places verified listings first while task search prioritizes relevance. Verified listings receive an ownership signal and an embeddable badge. No backlink is required.
+[Verify your domain](https://agentwebmap.com/verify?from=github) to manage its agent-facing summary, tags and terms, request a recrawl, and review file health and recorded discovery activity. Verification is optional for discovery and confirms domain control.
 
-Sites can be discovered automatically; verification is optional for inclusion. It confirms domain control rather than content accuracy. [Ownership guide](https://github.com/AgentWebMap/mcp/blob/main/docs/ownership.md).
+## For people
 
-## Learn about llms.txt
+Browse directory list and grid views, explore the 3D index or world map, and use a private workspace for favorites, collections, saved reports and recently opened sources.
 
-[The llms.txt project](https://agentwebmap.com/llms-txt-project) credits the original [proposal at llmstxt.org](https://llmstxt.org/) by Jeremy Howard and explains how Agent Web Map builds on that convention.
+**[3D explorer](https://agentwebmap.com/explore) · [World map](https://agentwebmap.com/map) · [Workspace](https://agentwebmap.com/workspace) · [Index statistics](https://agentwebmap.com/stats)**
 
-[What is llms.txt?](https://agentwebmap.com/what-is-llms-txt) · [Real examples](https://agentwebmap.com/llms-txt-examples) · [Best practices](https://agentwebmap.com/llms-txt-best-practices) · [About the directory](https://agentwebmap.com/about)
+The service has grown from its original directory into a source-discovery platform with cached files, programmatic access, integrations and publisher controls. Coverage remains incomplete; follow source links and check the publisher's documentation before relying on technical details.
 
-Coverage is incomplete. Read the original publisher pages before relying on an answer. Indexed headings and declared endpoints are discovery signals, not proof of an available action. Usage totals can include bots and repeated requests.
+Built on the [llms.txt convention](https://llmstxt.org/). The GitHub repositories provide product information and usage guides; the hosted application and crawler source are private.
 
-[The public repository](https://github.com/AgentWebMap/mcp) contains the platform introduction and integration documentation. The hosted application is maintained separately.
-
-[Contact us](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap) · [Agent-readable overview](https://agentwebmap.com/llms.txt) · [Full platform reference and verified publishers](https://agentwebmap.com/llms-full.txt)
-
-Public feature and interface information reviewed 10 November 2026.
+**[Product and connection guide](https://github.com/AgentWebMap/mcp) · [About](https://agentwebmap.com/about) · [Contact](https://agentwebmap.com/contact) · [X](https://x.com/AgentWebMap)**
