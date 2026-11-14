@@ -20,6 +20,8 @@
 
 **[Connect your agent](https://agentwebmap.com/docs#start) · [API reference](https://agentwebmap.com/docs) · [OpenAPI](https://agentwebmap.com/openapi.json)**
 
+The developer guide has focused chapters for first requests, MCP client setup, integration keys, OAuth, access limits and publisher management, with topic search and copyable examples. [Open the developer guide](https://agentwebmap.com/docs#start).
+
 Discovery reads stored data. A public search or lookup does not fetch publisher websites, run paid AI or trigger a recrawl. Free registered access unlocks separate live checking, generation, website audits and MCP endpoint inspection.
 
 Anonymous discovery includes **100 distinct publishers per network per UTC day**. A confirmed account with an application name and purpose includes **5,000/day**, shared across sessions, keys and OAuth connections. Larger bulk access needs approval. Individual public publisher profiles remain available.
